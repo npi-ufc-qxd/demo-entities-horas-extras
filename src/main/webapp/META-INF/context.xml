@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Overtime">
+  <!-- Java db -->
+  <!-- <Resource auth="Container" description="JavaDB for OverTime" driverClassName="org.apache.derby.jdbc.ClientDriver" maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/ds-overtime" password="overtime" type="javax.sql.DataSource" url="jdbc:derby://localhost:1527/overtime;create=true" username="overtime"/> -->
+  <!-- Postgres
+    -->
+    <Resource auth="Container"
+    driverClassName="org.postgresql.Driver"
+    maxActive="20"
+    maxIdle="10"
+    maxWait="-1"
+    name="jdbc/ds-overtime"
+    type="javax.sql.DataSource"
+    url="jdbc:postgresql://localhost:5432/ds-overtime"
+    username="postgres"
+    password="postgres"/>
+</Context>
